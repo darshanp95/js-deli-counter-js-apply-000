@@ -39,7 +39,7 @@ function currentLine(array) {
 
 
 
-  list = quote.trim()
+  var list = quote.trim()
 
   list = list.slice(0,-1)
   
