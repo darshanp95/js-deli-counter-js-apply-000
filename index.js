@@ -43,8 +43,11 @@ function currentLine(array) {
 
   list = list.slice(0,-1)
   
+  var openingPhrase = "The line is currently: "
+  
+  var finalStatement = openingPhrase + list
 
-  return list
+  return finalStatement
 
   } else {
     return "The line is currently empty."
