@@ -21,18 +21,30 @@ function nowServing(array) {
 }
 
 
+
+
 function currentLine(array) {
   if (array.length !== 0) {
-   var i;
 
-   for (i=0;i<array.length;i++) {
+  var quote = " "
+  
+  for (var i = 0; i<array.length; ++i) {
 
-     var normalIndex = i + 1
+    var realIndex = i+1
 
-     return `The line is currently: ${normalIndex}. ${array[i]}`
+    quote +=  realIndex + "." + " " + array[i] + ", ";
 
-   }
 
+  }
+
+
+
+  list = quote.trim()
+
+  list = list.slice(0,-1)
+  
+
+  return list
 
   } else {
     return "The line is currently empty."
